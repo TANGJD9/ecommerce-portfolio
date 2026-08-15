@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>选品分析 · 宠物慢食碗 · 跨境电商运营模拟操盘案例</title>
+<meta name="description" content="从市场趋势、目标人群、竞品对比到利润测算的完整选品逻辑">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230e1f45'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23ff6a13' font-family='Arial' font-weight='bold'%3E%E6%B5%B7%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">⛵</span>
+      <span>跨境运营模拟操盘<span style="display:block;font-size:11px;font-weight:600;color:#5c6b83;letter-spacing:.05em">Cross-border Ops Case · 林晓</span></span>
+    </a>
+    <nav class="nav" id="siteNav">
+      <a href="index.html" class="">首页</a>
+      <a href="selection.html" class="active">选品分析</a>
+      <a href="listing.html" class="">商品落地页</a>
+      <a href="ads.html" class="">广告投放</a>
+      <a href="dashboard.html" class="">数据看板</a>
+      <a href="review.html" class="">复盘与优化</a>
+      <a href="index.html#sell" class="btn btn-primary btn-sm nav-cta">我的核心卖点</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="菜单">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= 页头 ================= -->
+<div class="page-hero">
+  <div class="container">
+    <div class="crumb"><a href="index.html">首页</a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg><span>选品分析</span></div>
+    <span class="eyebrow"><span class="dot"></span>01 · 选品分析</span>
+    <h1>为什么选「宠物慢食碗」？<br><span style="color:var(--accent-deep)">因为它是「算出来」的，不是猜出来的</span></h1>
+    <p class="lead">选品是运营的第一道关卡。我用「市场趋势 → 目标人群 → 竞品分析 → 利润测算 → 关键词验证」五步法完成筛选，每一步都有数据支撑。</p>
+  </div>
+</div>
+<hr class="divider-grad">
+
+<!-- ================= 选品五步法 ================= -->
+<section class="section tight">
+  <div class="container">
+    <div class="flow reveal">
+      <div class="step"><div class="n">STEP 1</div><h4>市场趋势</h4><p>看大盘增速与需求是否真实</p></div>
+      <div class="step"><div class="n">STEP 2</div><h4>目标人群</h4><p>看痛点是否高频、强烈</p></div>
+      <div class="step"><div class="n">STEP 3</div><h4>竞品分析</h4><p>找差异化切入的空档</p></div>
+      <div class="step"><div class="n">STEP 4</div><h4>利润测算</h4><p>算清楚每单赚多少</p></div>
+      <div class="step"><div class="n">STEP 5</div><h4>关键词验证</h4><p>确认流量入口真实存在</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 市场趋势 ================= -->
+<section class="section tight">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="dot"></span>STEP 1 · 市场趋势</span>
+      <h2>宠物经济是确定性增长的赛道</h2>
+      <p class="lead">「宠物拟人化」推动宠物用品持续增长；而进食相关痛点（吃太快、呕吐、肥胖）是养宠人群的高频刚需，需求不会消失。</p>
+    </div>
+    <div class="grid" style="grid-template-columns:1.2fr .8fr;gap:22px">
+      <div class="panel reveal">
+        <div class="toolbar"><h3 style="font-size:17px">全球宠物用品市场规模（模拟）</h3><span class="tag green">年复合增速 ≈ 7%</span></div>
+        <div id="chartMarket" class="chart-box tall"></div>
+      </div>
+      <div class="reveal reveal-d1" style="display:flex;flex-direction:column;gap:22px">
+        <div class="panel" style="flex:1">
+          <h3 style="font-size:17px;margin-bottom:8px">📈 需求侧信号</h3>
+          <ul class="check-list" style="font-size:14px">
+            <li>「slow feeder dog bowl」类目月搜索量约 45 万+，近一年同比增长 22%</li>
+            <li>宠物肥胖率持续走高，慢食/控食是高频搜索动机</li>
+            <li>轻小件：单件约 300g，头程与仓储成本低，试错成本小</li>
+            <li>客单价 $12–20，处于「愿意为宠物花钱」的心理价位带</li>
+          </ul>
+        </div>
+        <div class="panel" style="flex:1">
+          <h3 style="font-size:17px;margin-bottom:8px">🗓️ 季节性波动（模拟）</h3>
+          <div id="chartSeason" class="chart-box short"></div>
+          <p class="chart-tip">12–1 月假日与「新年健康」季是流量高峰，选在 Q3 备货、Q4 起量，正好踩中旺季。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 目标人群 ================= -->
+<section class="section tight">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="dot"></span>STEP 2 · 目标人群</span>
+      <h2>三类核心人群，痛点都很「疼」</h2>
+      <p class="lead">卖点不是我想出来的，而是从目标人群的真实痛点和搜索动机里「翻译」出来的。</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="persona-card reveal">
+        <div class="avatar">🐶</div>
+        <div class="tag blue" style="margin-bottom:10px">人群 A · 新手养宠</div>
+        <h3 style="font-size:17px;margin-bottom:8px">狗狗吃太快 / 呕吐 / 胀气</h3>
+        <p style="font-size:14px;color:var(--muted);margin-bottom:12px">第一次养狗，发现狗 30 秒吞完一碗粮然后呕吐，着急但不知道怎么解决。</p>
+        <div class="kv"><span class="k">年龄</span><span class="v">18–30 岁</span></div>
+        <div class="kv"><span class="k">搜索词</span><span class="v">dog eats too fast / slow feeder</span></div>
+        <div class="kv"><span class="k">在意点</span><span class="v">安全材质、真的有用</span></div>
+      </div>
+      <div class="persona-card reveal reveal-d1">
+        <div class="avatar">💼</div>
+        <div class="tag purple" style="margin-bottom:10px">人群 B · 都市上班族</div>
+        <h3 style="font-size:17px;margin-bottom:8px">狗狗分离焦虑 / 拆家 / 精力过剩</h3>
+        <p style="font-size:14px;color:var(--muted);margin-bottom:12px">白天上班，狗在家无聊拆家，希望用益智玩具消耗狗狗精力、安抚情绪。</p>
+        <div class="kv"><span class="k">年龄</span><span class="v">25–40 岁</span></div>
+        <div class="kv"><span class="k">搜索词</span><span class="v">interactive dog toy / puzzle bowl</span></div>
+        <div class="kv"><span class="k">在意点</span><span class="v">能消磨时间、耐咬耐用</span></div>
+      </div>
+      <div class="persona-card reveal reveal-d2">
+        <div class="avatar">🐕‍🦺</div>
+        <div class="tag amber" style="margin-bottom:10px">人群 C · 多宠 / 大型犬家庭</div>
+        <h3 style="font-size:17px;margin-bottom:8px">抢食、进食过快、碗被掀翻</h3>
+        <p style="font-size:14px;color:var(--muted);margin-bottom:12px">家里不止一只宠物，吃饭像打仗，普通碗总被掀翻，需要防滑、防翻的设计。</p>
+        <div class="kv"><span class="k">年龄</span><span class="v">30–45 岁</span></div>
+        <div class="kv"><span class="k">搜索词</span><span class="v">dog bowl suction cup / non slip</span></div>
+        <div class="kv"><span class="k">在意点</span><span class="v">防滑吸盘、大容量、易清洗</span></div>
+      </div>
+    </div>
+    <div class="callout reveal" style="margin-top:22px">
+      <span class="ico">🧩</span>
+      <div><strong>人群 → 卖点翻译</strong>三个群体的痛点叠加，正好对应我们产品的三个差异化卖点：<b>慢食迷宫设计</b>（吃得慢、防呕吐）+ <b>强力吸盘</b>（防翻防滑）+ <b>食品级硅胶可拆洗</b>（安全卫生）。每个卖点都能回答一个真实痛点。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 竞品分析 ================= -->
+<section class="section tight">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="dot"></span>STEP 3 · 竞品分析</span>
+      <h2>四个竞品对比：机会藏在「别人没做好」的地方</h2>
+      <p class="lead">我按「价格带 × 卖点 × 口碑」扫描了类目头部与腰部产品，找到可切入的空档。</p>
+    </div>
+    <div class="panel reveal" style="padding:0;overflow:hidden">
+      <div class="table-wrap" style="border:none;border-radius:0">
+        <table>
+          <thead>
+            <tr>
+              <th style="min-width:170px">竞品</th>
+              <th>价格</th>
+              <th>评分 / 评论数</th>
+              <th style="min-width:200px">核心卖点</th>
+              <th style="min-width:200px">明显短板</th>
+              <th style="min-width:180px">→ 我们的机会</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><div class="comp-head"><strong>竞品 A · 头部品牌迷宫碗</strong><small>如 Outward Hound 类产品</small></div></td>
+              <td class="num">$14.99</td>
+              <td><span class="rate">4.5 ★</span><br><span class="num">28,000+ 条</span></td>
+              <td>品牌认知度高、评论壁垒厚、款式经典</td>
+              <td>无吸盘易翻、款式偏老、白色易显脏</td>
+              <td><span class="win">吸盘防翻 + 可拆洗升级款</span></td>
+            </tr>
+            <tr>
+              <td><div class="comp-head"><strong>竞品 B · 舔食垫类</strong><small>如 LickiMat 类产品</small></div></td>
+              <td class="num">$11.99</td>
+              <td><span class="rate">4.4 ★</span><br><span class="num">15,000+ 条</span></td>
+              <td>材质好、功能多、单价低</td>
+              <td>单价低毛利薄、形态小众、复购弱</td>
+              <td><span class="win">往中端 $13.99 价格带做升级</span></td>
+            </tr>
+            <tr>
+              <td><div class="comp-head"><strong>竞品 C · 白牌吸盘慢食碗</strong></div></td>
+              <td class="num">$9.99</td>
+              <td><span class="rate">4.2 ★</span><br><span class="num">3,200+ 条</span></td>
+              <td>价格低、主打吸盘卖点</td>
+              <td>吸盘吸不住、材质差、差评集中在质量</td>
+              <td><span class="win">品质 + 售后打出口碑差</span></td>
+            </tr>
+            <tr>
+              <td><div class="comp-head"><strong>竞品 D · 高端硅胶迷宫碗</strong></div></td>
+              <td class="num">$19.99</td>
+              <td><span class="rate">4.6 ★</span><br><span class="num">8,400+ 条</span></td>
+              <td>设计感强、材质高端</td>
+              <td>价格高、转化门槛高、容量偏小</td>
+              <td><span class="win">$13.99 定价 + 大容量补齐空档</span></td>
+            </tr>
+            <tr class="total-row">
+              <td><div class="comp-head"><strong>我们 · 慢食益智碗</strong><small>食品级硅胶 + 强力吸盘 + 可拆洗</small></div></td>
+              <td class="num">$14.99 → $13.99</td>
+              <td><span class="win">目标 4.5★+</span></td>
+              <td>慢食迷宫 + 吸盘防翻 + 可拆洗 + 容量刻度</td>
+              <td>起步评论少（用 Vine + 折扣积累）</td>
+              <td><span class="win">中端价格带 × 差异化卖点组合</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="callout green reveal" style="margin-top:22px">
+      <span class="ico">⚔️</span>
+      <div><strong>竞争策略总结</strong>头部产品有评论壁垒但不创新，白牌产品有低价但没品质。我们不打价格战，用「<b>头部没有的吸盘+可拆洗</b>」和「<b>白牌没有的品质</b>」切中端市场，$13.99 定价正好卡在 $11.99–$14.99 之间的心理价格带。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 利润测算 ================= -->
+<section class="section tight" style="background:linear-gradient(180deg,#fff,#f4f6fb)">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="dot"></span>STEP 4 · 利润测算</span>
+      <h2>利润测算器：每一单的钱，都算得明明白白</h2>
+      <p class="lead">我习惯把成本拆到「每一单」：采购、头程、FBA 配送、平台佣金、广告费逐项列清，验证这个产品值得做。下面的测算器可以拖动参数实时试算。</p>
+    </div>
+    <div class="grid" style="grid-template-columns:1fr 1.1fr;gap:24px">
+      <div class="panel reveal">
+        <h3 style="font-size:17px;margin-bottom:6px">🎚️ 拖动参数试算</h3>
+        <p style="font-size:13px;color:var(--muted);margin-bottom:18px">默认值为我的基准方案，可拖动体验不同定价/成本下的利润变化</p>
+        <div class="field">
+          <label>售价（美元）<output id="outPrice">$14.99</output></label>
+          <input type="range" id="rPrice" min="9.99" max="24.99" step="0.5" value="14.99">
+        </div>
+        <div class="field">
+          <label>采购成本（含包装）<output id="outCog">$2.60</output></label>
+          <input type="range" id="rCog" min="1.50" max="5.00" step="0.05" value="2.60">
+        </div>
+        <div class="field">
+          <label>头程运费（海运，单件均摊）<output id="outFreight">$1.05</output></label>
+          <input type="range" id="rFreight" min="0.30" max="3.00" step="0.05" value="1.05">
+        </div>
+        <div class="field">
+          <label>广告 ACOS 目标<output id="outAcos">22%</output></label>
+          <input type="range" id="rAcos" min="10" max="45" step="1" value="22">
+        </div>
+        <p class="note-line">固定项：FBA 配送费 $3.49 / 件，平台佣金 15%，汇率按 1:7.2 折算。</p>
+      </div>
+      <div class="reveal reveal-d1">
+        <div class="panel" style="background:linear-gradient(150deg,#fff,#fff8f3)">
+          <h3 style="font-size:17px;margin-bottom:16px">📋 单件利润拆解（美元）</h3>
+          <div class="kv"><span class="k">售价</span><span class="v" id="kvPrice">$14.99</span></div>
+          <div class="kv"><span class="k">采购成本</span><span class="v" id="kvCog">-$2.60</span></div>
+          <div class="kv"><span class="k">头程运费</span><span class="v" id="kvFreight">-$1.05</span></div>
+          <div class="kv"><span class="k">FBA 配送费</span><span class="v">-$3.49</span></div>
+          <div class="kv"><span class="k">平台佣金 (15%)</span><span class="v" id="kvFee">-$2.25</span></div>
+          <div class="kv"><span class="k">广告费（ACOS）</span><span class="v" id="kvAd">-$3.30</span></div>
+          <div class="kv"><span class="k">平台费用合计占比</span><span class="v" id="kvPlatformPct">38.3%</span></div>
+          <div class="divider" style="margin:16px 0"></div>
+          <div class="profit-result">
+            <div class="box"><div class="k">毛利（扣广告前）</div><div class="v" id="rvGross">$5.60</div></div>
+            <div class="box"><div class="k">毛利率</div><div class="v" id="rvGrossPct">37.4%</div></div>
+            <div class="box"><div class="k">净利（扣广告后）</div><div class="v" id="rvNet">$2.30</div></div>
+            <div class="box hl"><div class="k">净利率</div><div class="v" id="rvNetPct">15.3%</div></div>
+          </div>
+          <p class="note-line" style="margin-top:14px">按日销 40 单估算，月净利约 $2,760（模拟），规模化后可通过优化采购与 ACOS 进一步提升。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 关键词验证 ================= -->
+<section class="section tight">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="dot"></span>STEP 5 · 关键词验证</span>
+      <h2>流量入口验证：词有人搜，才值得做</h2>
+      <p class="lead">最后用关键词搜索量确认「需求真的存在且能承接」。以下为亚马逊美国站月搜索量模拟数据。</p>
+    </div>
+    <div class="grid" style="grid-template-columns:1.1fr .9fr;gap:24px">
+      <div class="panel reveal">
+        <div class="mini-bar"><span class="lab">slow feeder dog bowl</span><span class="track"><i data-w="100"></i></span><span class="val">45.2w</span></div>
+        <div class="mini-bar"><span class="lab">dog slow feeder</span><span class="track"><i data-w="62"></i></span><span class="val">28.1w</span></div>
+        <div class="mini-bar"><span class="lab">slow feed bowl for dogs</span><span class="track"><i data-w="40"></i></span><span class="val">18.3w</span></div>
+        <div class="mini-bar"><span class="lab">interactive dog bowl</span><span class="track"><i data-w="27"></i></span><span class="val">12.2w</span></div>
+        <div class="mini-bar"><span class="lab">anti gulping dog bowl</span><span class="track"><i data-w="14"></i></span><span class="val">6.5w</span></div>
+        <div class="mini-bar"><span class="lab">puzzle bowl for dogs</span><span class="track"><i data-w="11"></i></span><span class="val">5.2w</span></div>
+        <div class="mini-bar"><span class="lab">dog bowl with suction cup</span><span class="track"><i data-w="8"></i></span><span class="val">3.8w</span></div>
+        <p class="chart-tip">核心大词（45 万/月）竞争激烈但流量大，长尾词（3–6 万/月）竞争小、转化高——正好支撑「自动广告跑词 + 精准广告收割」的投放策略。</p>
+      </div>
+      <div class="reveal reveal-d1" style="display:flex;flex-direction:column;gap:22px">
+        <div class="panel">
+          <h3 style="font-size:17px;margin-bottom:10px">🧠 我的选品判断</h3>
+          <ul class="check-list">
+            <li>需求真实：痛点高频，搜索量稳定且增长</li>
+            <li>竞争有缝：头部守旧、白牌不精，中端留白</li>
+            <li>利润达标：净利率 15%+，可支撑广告投入</li>
+            <li>风险可控：轻小件、低客单，试错成本低</li>
+          </ul>
+        </div>
+        <div class="panel" style="background:linear-gradient(150deg,var(--green-soft),#fff)">
+          <h3 style="font-size:17px;margin-bottom:6px">✅ 选品结论</h3>
+          <p style="font-size:14px;color:var(--muted)">「宠物慢食益智碗」通过全部五项筛选，作为本次模拟操盘标的。下一步：把它的优势翻译成一套高转化 Listing——<a class="arrow-link" href="listing.html">查看商品落地页 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="footer-brand"><span class="brand-mark">⛵</span> 跨境电商运营模拟操盘案例</div>
+      <div class="footer-note" style="margin-top:10px">本网站为个人学习成果展示的<b style="color:#ffd9c2">模拟操盘案例</b>，所有数据均为学习用途的模拟数据，非真实运营数据。</div>
+      <div class="footer-note" style="margin-top:8px">📧 2634363100@qq.com &nbsp;·&nbsp; 💬 微信 15205093670</div>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">首页</a>
+      <a href="selection.html">选品分析</a>
+      <a href="listing.html">商品落地页</a>
+      <a href="ads.html">广告投放</a>
+      <a href="dashboard.html">数据看板</a>
+      <a href="review.html">复盘与优化</a>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+<script src="assets/vendor/echarts.min.js"></script>
+<script src="assets/js/selection.js"></script>
+</body>
+</html>
