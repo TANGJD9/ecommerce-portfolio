@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <radialGradient id="bgTop" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef2f9"/>
+    </radialGradient>
+    <linearGradient id="rimTop" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#49a88f"/><stop offset="1" stop-color="#2f7d6d"/></linearGradient>
+    <linearGradient id="innerTop" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0f352e"/><stop offset="1" stop-color="#1b4f45"/></linearGradient>
+    <linearGradient id="mazeTop" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#54b99d"/><stop offset="1" stop-color="#3c947c"/></linearGradient>
+    <radialGradient id="shadowTop" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#0a2b25" stop-opacity="0.3"/><stop offset="1" stop-color="#0a2b25" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#bgTop)"/>
+  <ellipse cx="400" cy="590" rx="330" ry="60" fill="url(#shadowTop)"/>
+  <ellipse cx="400" cy="400" rx="340" ry="130" fill="url(#rimTop)"/>
+  <ellipse cx="400" cy="400" rx="340" ry="130" fill="none" stroke="#123f37" stroke-width="6" opacity="0.35"/>
+  <ellipse cx="400" cy="400" rx="292" ry="108" fill="url(#innerTop)"/>
+  <g fill="url(#mazeTop)" stroke="#1b5a4e" stroke-width="3.5">
+    <path d="M150 400 A250 92 0 0 1 400 308 A250 92 0 0 1 650 400 A250 92 0 0 1 400 492 A250 92 0 0 1 150 400 Z M 150 400 L 210 400" fill-rule="evenodd"/>
+    <path d="M150 400 A250 92 0 0 0 400 492 A250 92 0 0 0 650 400 A250 92 0 0 0 400 308 A250 92 0 0 0 150 400 Z M 590 400 L 650 400" fill-rule="evenodd"/>
+    <path d="M212 400 A188 70 0 0 1 400 330 A188 70 0 0 1 588 400 A188 70 0 0 1 400 470 A188 70 0 0 1 212 400 Z M 212 400 L 268 400" fill-rule="evenodd"/>
+    <path d="M212 400 A188 70 0 0 0 400 470 A188 70 0 0 0 588 400 A188 70 0 0 0 400 330 A188 70 0 0 0 212 400 Z M 532 400 L 588 400" fill-rule="evenodd"/>
+    <path d="M270 400 A130 50 0 0 1 400 350 A130 50 0 0 1 530 400 A130 50 0 0 1 400 450 A130 50 0 0 1 270 400 Z M 270 400 L 318 400" fill-rule="evenodd"/>
+    <path d="M270 400 A130 50 0 0 0 400 450 A130 50 0 0 0 530 400 A130 50 0 0 0 400 350 A130 50 0 0 0 270 400 Z M 482 400 L 530 400" fill-rule="evenodd"/>
+  </g>
+  <ellipse cx="400" cy="400" rx="40" ry="15" fill="#54b99d" stroke="#1b5a4e" stroke-width="3.5"/>
+</svg>
