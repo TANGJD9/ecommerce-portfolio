@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <linearGradient id="bodyG" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2f7d6d"/>
+      <stop offset="0.55" stop-color="#1d5a4f"/>
+      <stop offset="1" stop-color="#123f37"/>
+    </linearGradient>
+    <linearGradient id="rimG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#49a88f"/>
+      <stop offset="1" stop-color="#2f7d6d"/>
+    </linearGradient>
+    <linearGradient id="innerG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f352e"/>
+      <stop offset="1" stop-color="#1b4f45"/>
+    </linearGradient>
+    <linearGradient id="mazeG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#54b99d"/>
+      <stop offset="1" stop-color="#3c947c"/>
+    </linearGradient>
+    <radialGradient id="shadowG" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#0a2b25" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#0a2b25" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bgG" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f2f5fa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1000" height="1000" fill="url(#bgG)"/>
+  <!-- 地面阴影 -->
+  <ellipse cx="500" cy="812" rx="330" ry="58" fill="url(#shadowG)"/>
+  <!-- 碗体 -->
+  <path d="M170 430 C168 560 240 726 500 740 C760 726 832 560 830 430 Z" fill="url(#bodyG)"/>
+  <!-- 高光 -->
+  <path d="M225 470 C225 570 290 690 500 710 C430 700 350 600 345 470 Z" fill="#ffffff" opacity="0.10"/>
+  <!-- 碗底圈 -->
+  <ellipse cx="500" cy="740" rx="330" ry="60" fill="none" stroke="#0d312a" stroke-width="6" opacity="0.35"/>
+  <!-- 外沿 -->
+  <ellipse cx="500" cy="420" rx="360" ry="112" fill="url(#rimG)"/>
+  <ellipse cx="500" cy="420" rx="360" ry="112" fill="none" stroke="#123f37" stroke-width="5" opacity="0.4"/>
+  <!-- 内碗 -->
+  <ellipse cx="500" cy="420" rx="304" ry="94" fill="url(#innerG)"/>
+  <!-- 迷宫凸脊（同心椭圆环 + 缺口） -->
+  <g fill="url(#mazeG)" stroke="#1b5a4e" stroke-width="3">
+    <!-- 外环 -->
+    <path d="M248 420 A252 80 0 0 1 500 338 A252 80 0 0 1 752 420 A252 80 0 0 1 500 502 A252 80 0 0 1 248 420 Z M 248 420 L 300 420" fill-rule="evenodd"/>
+    <path d="M248 420 A252 80 0 0 0 500 502 A252 80 0 0 0 752 420 A252 80 0 0 0 500 338 A252 80 0 0 0 248 420 Z M 700 420 L 752 420" fill-rule="evenodd"/>
+    <!-- 中环 -->
+    <path d="M302 420 A198 62 0 0 1 500 358 A198 62 0 0 1 698 420 A198 62 0 0 1 500 482 A198 62 0 0 1 302 420 Z M 302 420 L 360 420" fill-rule="evenodd"/>
+    <path d="M302 420 A198 62 0 0 0 500 482 A198 62 0 0 0 698 420 A198 62 0 0 0 500 358 A198 62 0 0 0 302 420 Z M 640 420 L 698 420" fill-rule="evenodd"/>
+    <!-- 内环 -->
+    <path d="M356 420 A144 46 0 0 1 500 374 A144 46 0 0 1 644 420 A144 46 0 0 1 500 466 A144 46 0 0 1 356 420 Z M 356 420 L 400 420" fill-rule="evenodd"/>
+    <path d="M356 420 A144 46 0 0 0 500 466 A144 46 0 0 0 644 420 A144 46 0 0 0 500 374 A144 46 0 0 0 356 420 Z M 600 420 L 644 420" fill-rule="evenodd"/>
+  </g>
+  <!-- 中心小圆 -->
+  <ellipse cx="500" cy="420" rx="34" ry="11" fill="#54b99d" stroke="#1b5a4e" stroke-width="3"/>
+  <!-- 橙色爪印装饰 -->
+  <g transform="translate(250 300) rotate(-15)" fill="#ff7a2a">
+    <ellipse cx="0" cy="0" rx="26" ry="20"/>
+    <ellipse cx="-34" cy="-26" rx="10" ry="13"/>
+    <ellipse cx="-8" cy="-36" rx="10" ry="13"/>
+    <ellipse cx="18" cy="-30" rx="10" ry="13"/>
+    <ellipse cx="34" cy="-14" rx="10" ry="13"/>
+  </g>
+  <g transform="translate(740 560) rotate(15)" fill="#ff7a2a" opacity="0.85">
+    <ellipse cx="0" cy="0" rx="18" ry="14"/>
+    <ellipse cx="-24" cy="-18" rx="7" ry="9"/>
+    <ellipse cx="-6" cy="-25" rx="7" ry="9"/>
+    <ellipse cx="12" cy="-21" rx="7" ry="9"/>
+    <ellipse cx="24" cy="-10" rx="7" ry="9"/>
+  </g>
+</svg>
