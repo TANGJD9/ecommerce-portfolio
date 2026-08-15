@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800">
+  <defs>
+    <radialGradient id="bgSide" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef2f9"/></radialGradient>
+    <linearGradient id="bodySide" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2f7d6d"/><stop offset="0.55" stop-color="#1d5a4f"/><stop offset="1" stop-color="#123f37"/></linearGradient>
+    <linearGradient id="suctionG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5b7fd4"/><stop offset="1" stop-color="#3b5cb0"/></linearGradient>
+    <radialGradient id="shadowSide" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#0a2b25" stop-opacity="0.32"/><stop offset="1" stop-color="#0a2b25" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#bgSide)"/>
+  <ellipse cx="400" cy="620" rx="300" ry="52" fill="url(#shadowSide)"/>
+  <path d="M190 330 C186 440 250 590 400 606 C550 590 614 440 610 330 Z" fill="url(#bodySide)"/>
+  <path d="M232 360 C232 440 285 545 400 575 C340 560 300 480 296 360 Z" fill="#ffffff" opacity="0.10"/>
+  <!-- 吸盘 -->
+  <ellipse cx="400" cy="606" rx="150" ry="34" fill="url(#suctionG)"/>
+  <ellipse cx="400" cy="606" rx="150" ry="34" fill="none" stroke="#2c4490" stroke-width="5" opacity="0.4"/>
+  <ellipse cx="400" cy="618" rx="118" ry="24" fill="#33509e"/>
+  <!-- 容量刻度 -->
+  <g stroke="#9fe0cd" stroke-width="5" stroke-linecap="round">
+    <line x1="250" y1="360" x2="250" y2="382"/><line x1="272" y1="346" x2="272" y2="368"/>
+    <line x1="294" y1="336" x2="294" y2="358"/><line x1="316" y1="329" x2="316" y2="351"/>
+  </g>
+  <!-- 外沿 -->
+  <ellipse cx="400" cy="330" rx="225" ry="62" fill="#49a88f"/>
+  <ellipse cx="400" cy="330" rx="225" ry="62" fill="none" stroke="#123f37" stroke-width="5" opacity="0.4"/>
+  <ellipse cx="400" cy="330" rx="180" ry="48" fill="#0f352e"/>
+</svg>
