@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="wallG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#eef2f9"/><stop offset="1" stop-color="#dfe7f3"/></linearGradient>
+    <linearGradient id="floorG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c9b48d"/><stop offset="1" stop-color="#b39a70"/></linearGradient>
+    <linearGradient id="dogG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#c98d4b"/><stop offset="1" stop-color="#a86f33"/></linearGradient>
+    <linearGradient id="bowlG2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f7d6d"/><stop offset="1" stop-color="#123f37"/></linearGradient>
+    <radialGradient id="sunG" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#fff3d6"/><stop offset="1" stop-color="#fff3d6" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#wallG)"/>
+  <circle cx="1010" cy="150" r="150" fill="url(#sunG)"/>
+  <!-- 装饰画 -->
+  <rect x="90" y="90" width="170" height="130" rx="12" fill="#fff" stroke="#d7deeb" stroke-width="3"/>
+  <g transform="translate(130 120)"><ellipse cx="45" cy="55" rx="26" ry="20" fill="#ff7a2a"/><ellipse cx="11" cy="30" rx="10" ry="13" fill="#ff7a2a"/><ellipse cx="37" cy="20" rx="10" ry="13" fill="#ff7a2a"/><ellipse cx="63" cy="26" rx="10" ry="13" fill="#ff7a2a"/><ellipse cx="79" cy="42" rx="10" ry="13" fill="#ff7a2a"/></g>
+  <rect x="920" y="80" width="120" height="150" rx="12" fill="#fff" stroke="#d7deeb" stroke-width="3"/>
+  <circle cx="980" cy="140" r="26" fill="#54b99d"/><rect x="950" y="180" width="60" height="26" rx="8" fill="#2f6bff"/>
+  <!-- 地板 -->
+  <rect y="600" width="1200" height="200" fill="url(#floorG)"/>
+  <line x1="0" y1="600" x2="1200" y2="600" stroke="#a0875f" stroke-width="4"/>
+  <!-- 沙发 -->
+  <rect x="740" y="380" width="400" height="220" rx="28" fill="#5c6b83"/>
+  <rect x="760" y="350" width="360" height="80" rx="26" fill="#6c7d99"/>
+  <rect x="760" y="420" width="360" height="40" rx="14" fill="#516078"/>
+  <!-- 植物 -->
+  <g transform="translate(180 520)"><rect x="-6" y="20" width="40" height="70" rx="10" fill="#b35c33"/><ellipse cx="14" cy="-4" rx="34" ry="52" fill="#3c947c"/><ellipse cx="40" cy="4" rx="28" ry="44" fill="#4aa98b"/><ellipse cx="-14" cy="8" rx="26" ry="40" fill="#2f7d6d"/></g>
+  <!-- 狗狗 -->
+  <g transform="translate(430 470)">
+    <!-- 身体 -->
+    <ellipse cx="60" cy="70" rx="95" ry="62" fill="url(#dogG)"/>
+    <!-- 头 -->
+    <ellipse cx="-70" cy="10" rx="62" ry="54" fill="#c98d4b"/>
+    <ellipse cx="-104" cy="2" rx="26" ry="30" fill="#a86f33"/>
+    <ellipse cx="-100" cy="6" rx="16" ry="20" fill="#d9a468"/>
+    <circle cx="-92" cy="-8" r="7" fill="#2c231a"/><circle cx="-120" cy="-10" r="6" fill="#2c231a"/>
+    <ellipse cx="-108" cy="20" rx="16" ry="10" fill="#3a2c1d"/>
+    <!-- 耳朵 -->
+    <path d="M-40 -46 C-30 -90 -70 -100 -86 -58 Z" fill="#a86f33"/>
+    <path d="M-96 -34 C-120 -74 -160 -56 -136 -14 Z" fill="#a86f33"/>
+    <!-- 尾巴 -->
+    <path d="M150 40 C190 20 200 50 190 80" fill="none" stroke="#c98d4b" stroke-width="22" stroke-linecap="round"/>
+    <!-- 腿 -->
+    <rect x="10" y="112" width="26" height="58" rx="12" fill="#b37a3a"/>
+    <rect x="80" y="112" width="26" height="58" rx="12" fill="#b37a3a"/>
+    <rect x="110" y="112" width="26" height="58" rx="12" fill="#c98d4b"/>
+    <!-- 舌头舔碗 -->
+    <path d="M-118 34 C-128 54 -118 62 -104 58" fill="none" stroke="#e56b7a" stroke-width="10" stroke-linecap="round"/>
+  </g>
+  <!-- 慢食碗 -->
+  <ellipse cx="300" cy="640" rx="120" ry="26" fill="#0a2b25" opacity="0.18"/>
+  <path d="M210 600 C208 630 240 662 300 662 C360 662 392 630 390 600 Z" fill="url(#bowlG2)"/>
+  <ellipse cx="300" cy="600" rx="98" ry="26" fill="#49a88f"/>
+  <ellipse cx="300" cy="600" rx="80" ry="20" fill="#0f352e"/>
+  <ellipse cx="285" cy="602" rx="22" ry="7" fill="#54b99d"/>
+  <!-- 爱心 -->
+  <g transform="translate(560 420) scale(1.6)"><path d="M0 8 C-6 -2 -20 -2 -20 6 C-20 14 -8 22 0 28 C8 22 20 14 20 6 C20 -2 6 -2 0 8 Z" fill="#ff6a7a"/></g>
+  <text x="250" y="90" font-family="Arial, sans-serif" font-size="40" font-weight="800" fill="#1d3f7a" letter-spacing="1">慢一点，更健康 🐾</text>
+</svg>
