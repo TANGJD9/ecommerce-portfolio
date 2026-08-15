@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>商品落地页 · Listing 与转化 · 跨境电商运营模拟操盘案例</title>
+<meta name="description" content="高转化商品详情页：标题、五点卖点、价格促销、A+内容与信任背书">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230e1f45'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23ff6a13' font-family='Arial' font-weight='bold'%3E%E6%B5%B7%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">⛵</span>
+      <span>跨境运营模拟操盘<span style="display:block;font-size:11px;font-weight:600;color:#5c6b83;letter-spacing:.05em">Cross-border Ops Case · 林晓</span></span>
+    </a>
+    <nav class="nav" id="siteNav">
+      <a href="index.html" class="">首页</a>
+      <a href="selection.html" class="">选品分析</a>
+      <a href="listing.html" class="active">商品落地页</a>
+      <a href="ads.html" class="">广告投放</a>
+      <a href="dashboard.html" class="">数据看板</a>
+      <a href="review.html" class="">复盘与优化</a>
+      <a href="index.html#sell" class="btn btn-primary btn-sm nav-cta">我的核心卖点</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="菜单">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= 页头 ================= -->
+<div class="page-hero">
+  <div class="container">
+    <div class="crumb"><a href="index.html">首页</a><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg><span>商品落地页</span></div>
+    <span class="eyebrow"><span class="dot"></span>02 · 商品落地页</span>
+    <h1>一套「高转化」Listing 是怎么写出来的</h1>
+    <p class="lead">Listing 是转化率的战场。下面是一版完整的亚马逊商品详情页演示，并在旁边标注了<b style="color:var(--accent-deep)">每一处设计背后的转化逻辑</b>——我懂的不只是「怎么写」，更是「为什么这么写」。</p>
+  </div>
+</div>
+<hr class="divider-grad">
+
+<!-- ================= CRO 思维 ================= -->
+<section class="section tight">
+  <div class="container">
+    <div class="grid grid-4">
+      <div class="card hover reveal">
+        <div class="icon-badge tint-orange">🎯</div>
+        <h3>先想清楚「谁在看」</h3>
+        <p>每个词、每张图都对着目标人群的痛点写，而不是堆砌形容词。</p>
+      </div>
+      <div class="card hover reveal reveal-d1">
+        <div class="icon-badge tint-blue">🧲</div>
+        <h3>每个元素都有任务</h3>
+        <p>主图抓眼球 → 标题给信息 → 五点消顾虑 → 价格促行动，环环相扣。</p>
+      </div>
+      <div class="card hover reveal reveal-d2">
+        <div class="icon-badge tint-green">🤝</div>
+        <h3>信任决定成交</h3>
+        <p>评分、评论、A+ 品牌故事、退换保障——把「犹豫」转化成「放心」。</p>
+      </div>
+      <div class="card hover reveal reveal-d3">
+        <div class="icon-badge tint-purple">🔬</div>
+        <h3>用数据验证效果</h3>
+        <p>上线后通过点击率/转化率看板验证假设，主图 A/B 测试持续迭代（见复盘页）。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Listing 演示 ================= -->
+<section class="section tight">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="dot"></span>Listing 演示</span>
+      <h2>商品详情页（亚马逊风格演示）</h2>
+      <p class="lead">点击左侧缩略图可切换主图，右侧为该卖点对应的转化逻辑说明。</p>
+    </div>
+    <div class="listing-frame reveal">
+      <div class="amazon-topbar">
+        <span class="logo">amazon</span>
+        <div class="search"><span>搜索</span><span>🔍</span></div>
+        <span>🛒 购物车</span>
+      </div>
+      <div class="amazon-body">
+        <div class="listing-grid">
+          <!-- 左：图片画廊 -->
+          <div>
+            <div class="ab-img" id="mainShot" style="height:430px;border:none;border:1px solid var(--line);border-radius:14px;padding:0;overflow:hidden;background:#fff">
+              <img id="mainImg" src="assets/img/bowl-hero.svg" alt="慢食碗主图" style="width:100%;height:100%;object-fit:contain">
+            </div>
+            <div class="review-strip" style="margin-top:12px" id="galleryThumbs">
+              <span data-img="assets/img/bowl-hero.svg" data-cap="白底主图：产品全貌 + 视觉冲击" style="cursor:pointer;border:2px solid var(--accent);padding:6px 10px">📷 主图</span>
+              <span data-img="assets/img/bowl-top.svg" data-cap="细节图：迷宫慢食结构一览" style="cursor:pointer;padding:6px 10px">🌀 迷宫结构</span>
+              <span data-img="assets/img/bowl-side.svg" data-cap="细节图：底部强力吸盘 + 容量刻度" style="cursor:pointer;padding:6px 10px">🫧 吸盘设计</span>
+              <span data-img="assets/img/lifestyle.svg" data-cap="场景图：狗狗愉快用餐（转化关键）" style="cursor:pointer;padding:6px 10px">🐶 使用场景</span>
+            </div>
+            <p class="chart-tip" id="imgCaption">白底主图：产品全貌 + 视觉冲击</p>
+          </div>
+          <!-- 右：商品信息 -->
+          <div>
+            <div class="listing-title">Dog Slow Feeder Bowl, <em>Anti-Gulping</em> Interactive Puzzle Bowl for Dogs, Non-Slip Suction Base, Food-Grade Silicone, Dishwasher Safe, <em>2.5 Cups</em> – Slows Eating, Prevents Vomiting &amp; Bloat (Teal)</div>
+            <div class="listing-meta">
+              <span class="stars">★★★★★</span>
+              <span style="color:#007185">4.5</span> <span style="color:#565959">(128 ratings)</span>
+              <span class="tag green">Amazon's Choice 目标</span>
+              <span class="tag amber">10,000+ sold (目标)</span>
+            </div>
+            <div class="price-row">
+              <span class="price-now">$14.99</span>
+              <span class="price-before">$19.99</span>
+              <span class="price-off">-25%</span>
+            </div>
+            <div class="coupon">💸 点击领取 <b>5% 优惠券</b>（限时）</div>
+            <ul class="bullets">
+              <li><b>慢食防呕吐：</b>独特迷宫结构让进食速度放慢 3 倍，有效减少进食过快导致的呕吐、胀气与肥胖风险。</li>
+              <li><b>强力吸盘防翻：</b>底部 3 点式吸盘牢牢吸附光滑地面，大型犬也掀不翻，告别「饭盆满地滚」。</li>
+              <li><b>食品级硅胶安全：</b>BPA-free 食品级硅胶，柔软耐用不伤牙，高温可煮，入口更安心。</li>
+              <li><b>可拆洗更卫生：</b>碗身与吸盘可分离，洗碗机/手洗皆可，杜绝藏污纳垢。</li>
+              <li><b>2.5 杯大容量：</b>适配 5–60 磅犬种，容量刻度线一目了然，科学喂食不浪费。</li>
+            </ul>
+            <div class="kv" style="font-size:13px"><span class="k">材质</span><span class="v">食品级硅胶 + ABS 吸盘底座</span></div>
+            <div class="kv" style="font-size:13px"><span class="k">尺寸</span><span class="v">10.2 × 8.7 × 2.8 in / 容量 2.5 cups</span></div>
+            <div class="kv" style="font-size:13px"><span class="k">适用</span><span class="v">小型/中型/大型犬；猫咪亦可使用</span></div>
+            <div class="buy-box">
+              <div class="stock">✓ 现货，Prime 会员次日达</div>
+              <div class="price-row" style="margin:8px 0"><span class="price-now" style="font-size:20px">$14.99</span><span class="tag green">Prime</span></div>
+              <button class="add-btn">加入购物车</button>
+              <button class="add-btn buy" style="margin-top:8px">立即购买</button>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:26px;padding-top:18px;border-top:1px solid #eee;font-size:13px;color:#565959">
+          ✅ 亚马逊官方合作（演示） · 🚚 支持 FBA 多渠道配送 · ↔️ 30 天无理由退换
+        </div>
+      </div>
+    </div>
+    <div class="callout blue reveal" style="margin-top:22px">
+      <span class="ico">🧠</span>
+      <div><strong>转化逻辑拆解（面试可讲）</strong>① 标题 = 核心关键词前置 + 场景/痛点词 + 差异化卖点 + 规格词，兼顾搜索与点击；② 五点卖点 = 每条都「先给结果、再给证据」，直接回应目标人群痛点；③ 价格 = $19.99 划线价 + 25% 折扣制造「优惠感」，再用 5% 优惠券提高转化；④ 信任 = 星级、评论数、Prime、退换保障逐层消除顾虑。</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 价格与促销策略 ================= -->
+<section class="section tight" style="background:linear-gradient(180deg,#fff,#f4f6fb)">
+  <div class="container">
+    <div class="grid" style="grid-template-columns:1fr 1fr;gap:24px">
+      <div class="panel reveal">
+        <h3 style="font-size:17px;margin-bottom:14px">💵 定价与促销节奏</h3>
+        <div class="kv"><span class="k">定价逻辑</span><span class="v">$14.99 卡在中端价格带（对标 $11.99–$19.99），用 $19.99 划线价衬托性价比</span></div>
+        <div class="kv"><span class="k">新品期</span><span class="v">Coupon 5% + 限时 25% off，快速积累初期订单与评论</span></div>
+        <div class="kv"><span class="k">成长期</span><span class="v">恢复 $14.99 常态价，用 Coupon 5% 维持转化，配合秒杀（Deal）冲排名</span></div>
+        <div class="kv"><span class="k">成熟期</span><span class="v">大促（Prime Day / Black Friday）降价 15–20% 冲量，日常维持利润</span></div>
+        <p class="note-line">促销的本质是「用短期让利换排名与评论」，每次促销后都要复盘利润与自然位变化。</p>
+      </div>
+      <div class="panel reveal reveal-d1">
+        <h3 style="font-size:17px;margin-bottom:14px">🗺️ 价格带地图（模拟）</h3>
+        <div class="mini-bar"><span class="lab">白牌低价带 $9.99</span><span class="track"><i data-w="60" style="background:linear-gradient(90deg,#8b98ad,#5c6b83)"></i></span><span class="val">质量差</span></div>
+        <div class="mini-bar"><span class="lab">竞品 B $11.99</span><span class="track"><i data-w="72" style="background:linear-gradient(90deg,#8b98ad,#5c6b83)"></i></span><span class="val">毛利薄</span></div>
+        <div class="mini-bar"><span class="lab"><b>我们 $13.99–14.99</b></span><span class="track"><i data-w="84" style="background:linear-gradient(90deg,#ff8a3d,#e8520a)"></i></span><span class="val" style="color:var(--accent-deep)">✓ 定位</span></div>
+        <div class="mini-bar"><span class="lab">竞品 A $14.99</span><span class="track"><i data-w="90" style="background:linear-gradient(90deg,#8b98ad,#5c6b83)"></i></span><span class="val">无吸盘</span></div>
+        <div class="mini-bar"><span class="lab">竞品 D $19.99</span><span class="track"><i data-w="100" style="background:linear-gradient(90deg,#8b98ad,#5c6b83)"></i></span><span class="val">门槛高</span></div>
+        <p class="chart-tip">我们的价格略高于白牌但低于头部升级款，配合「吸盘+可拆洗」差异化，打的是「同价位里功能最全、同功能里价格最优」。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= A+ 内容 ================= -->
+<section class="section tight">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="dot"></span>A+ 内容</span>
+      <h2>图文详情：把「卖点」讲成「画面」</h2>
+      <p class="lead">A+ 内容的作用是把冷冰冰的参数变成用户能想象的场景，进一步提升转化率与品牌感。</p>
+    </div>
+    <div class="aplus-block reveal">
+      <div class="aplus-head">🛍️ 宠物慢食益智碗 · 品牌故事（A+ 内容预览）</div>
+      <div class="aplus-grid">
+        <div class="aplus-cell">
+          <div class="em">🐶</div>
+          <h4>狗狗为什么总吐？</h4>
+          <p>进食过快是呕吐、胀气、肥胖的头号元凶。我们的迷宫设计让进食放慢 3 倍，让吃饭回归健康节奏。</p>
+        </div>
+        <div class="aplus-cell">
+          <div class="em">🌀</div>
+          <h4>慢食迷宫结构</h4>
+          <p>三层迷宫凸脊 + 错位通道，狗狗需要用舌头和鼻子「工作」才能吃到，天然放慢进食速度。</p>
+        </div>
+        <div class="aplus-cell">
+          <div class="em">🫧</div>
+          <h4>强力吸盘底座</h4>
+          <p>3 点式吸盘设计，光滑地面一按即稳，大型犬也掀不翻；吸盘可拆卸，清洗零死角。</p>
+        </div>
+        <div class="aplus-cell" style="border-bottom:none">
+          <div class="em">🧼</div>
+          <h4>食品级安全材质</h4>
+          <p>BPA-free 食品级硅胶，柔软不伤牙、高温可煮消毒，入口更安心，狗狗舔得放心。</p>
+        </div>
+        <div class="aplus-cell" style="border-bottom:none">
+          <div class="em">⚖️</div>
+          <h4>容量刻度科学喂食</h4>
+          <p>2.5 杯大容量 + 清晰刻度线，适配 5–60 磅犬种，控制食量、拒绝过度投喂。</p>
+        </div>
+        <div class="aplus-cell" style="border-bottom:none">
+          <div class="em">📦</div>
+          <h4>开箱即用</h4>
+          <p>食品级包装 + 双语说明书，附赠小型零食勺，到手即可开始「慢食训练」。</p>
+        </div>
+      </div>
+    </div>
+    <div class="grid" style="grid-template-columns:1.15fr .85fr;gap:22px;margin-top:22px">
+      <div class="panel reveal">
+        <h3 style="font-size:17px;margin-bottom:10px">🖼️ 场景图示例（品牌氛围感）</h3>
+        <img src="assets/img/lifestyle.svg" alt="狗狗使用慢食碗场景图" style="border-radius:12px;border:1px solid var(--line);width:100%">
+        <p class="chart-tip">场景图让买家「代入画面」：温暖的客厅 + 开心的狗狗 = 我买了也能这样。这是 A/B 测试中胜出的主图方向（详见复盘页）。</p>
+      </div>
+      <div class="reveal reveal-d1" style="display:flex;flex-direction:column;gap:22px">
+        <div class="panel">
+          <h3 style="font-size:17px;margin-bottom:12px">📝 A+ 内容写作原则</h3>
+          <ul class="check-list">
+            <li>先讲「用户痛点」，再讲「产品方案」</li>
+            <li>每个模块只讲一个核心卖点，配一张图</li>
+            <li>用数字说话：3 倍慢食、2.5 杯、5–60 磅</li>
+            <li>统一品牌色与视觉，强化品牌记忆</li>
+          </ul>
+        </div>
+        <div class="callout orange">
+          <span class="ico">⚠️</span>
+          <div><strong>可迁移经验</strong>这套「痛点→方案→证据」的写法，同样适用于 TikTok Shop 的商品卡、Shopee 的图文详情和独立站的 Landing Page——底层都是「把卖点翻译成用户语言」。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 评价与信任 ================= -->
+<section class="section tight" style="background:linear-gradient(180deg,#fff,#f4f6fb)">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="dot"></span>信任背书</span>
+      <h2>用户评价与信任体系：让「犹豫」变「放心」</h2>
+      <p class="lead">新品最缺的是信任。我的策略是「用机制补信任」：种子评论、权威标识、售后承诺三步走。</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card reveal">
+        <div class="review-strip" style="border:none;padding:0;margin:0 0 10px"><span class="stars">★★★★★</span><b>4.5</b></div>
+        <p style="font-size:14px;margin-bottom:10px">「我家柯基以前 30 秒吃完就吐，换了这款之后慢多了，吸盘真的稳，大型犬都掀不翻！」</p>
+        <div class="tag green">已购买 · 5 星</div>
+        <div class="tag" style="margin-left:6px">👍 有帮助 128</div>
+      </div>
+      <div class="card reveal reveal-d1">
+        <div class="review-strip" style="border:none;padding:0;margin:0 0 10px"><span class="stars">★★★★☆</span><b>4.0</b></div>
+        <p style="font-size:14px;margin-bottom:10px">「材质很软很安全，洗碗机洗也没变形。扣一星是吸盘在瓷砖缝上吸不牢，铺防滑垫就好。」</p>
+        <div class="tag amber">已购买 · 4 星</div>
+        <div class="tag" style="margin-left:6px">👍 有帮助 63</div>
+      </div>
+      <div class="card reveal reveal-d2">
+        <div class="review-strip" style="border:none;padding:0;margin:0 0 10px"><span class="stars">★★★★★</span><b>5.0</b></div>
+        <p style="font-size:14px;margin-bottom:10px">「客服很专业，问的尺寸问题秒回，还送了小零食勺。包装很用心，自用送礼都合适。」</p>
+        <div class="tag blue">Vine 计划 · 5 星</div>
+        <div class="tag" style="margin-left:6px">👍 有帮助 41</div>
+      </div>
+    </div>
+    <div class="grid" style="grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px">
+      <div class="card plain reveal" style="text-align:center;border:1px dashed var(--line-strong)">
+        <div style="font-size:26px">🟦</div><b style="font-size:14px">Amazon's Choice</b><p style="font-size:12.5px">通过转化与相关性优化争取标识</p>
+      </div>
+      <div class="card plain reveal reveal-d1" style="text-align:center;border:1px dashed var(--line-strong)">
+        <div style="font-size:26px">✅</div><b style="font-size:14px">Vine 计划</b><p style="font-size:12.5px">新品期用 Vine 快速积累真实评论</p>
+      </div>
+      <div class="card plain reveal reveal-d2" style="text-align:center;border:1px dashed var(--line-strong)">
+        <div style="font-size:26px">🔄</div><b style="font-size:14px">30 天退换</b><p style="font-size:12.5px">售后承诺降低下单顾虑</p>
+      </div>
+      <div class="card plain reveal reveal-d3" style="text-align:center;border:1px dashed var(--line-strong)">
+        <div style="font-size:26px">💬</div><b style="font-size:14px">QA 及时响应</b><p style="font-size:12.5px">24h 内回复问答，沉淀信任</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 下一步 ================= -->
+<section class="section tight">
+  <div class="container">
+    <div class="callout green reveal" style="justify-content:space-between;align-items:center;flex-wrap:wrap">
+      <div style="display:flex;gap:14px;align-items:flex-start">
+        <span class="ico">📣</span>
+        <div><strong>落地页完成，下一步：怎么让买家看到它？</strong>Listing 只是「接住流量」，还需要广告把流量引进来——<a class="arrow-link" href="ads.html">查看广告投放方案 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="footer-brand"><span class="brand-mark">⛵</span> 跨境电商运营模拟操盘案例</div>
+      <div class="footer-note" style="margin-top:10px">本网站为个人学习成果展示的<b style="color:#ffd9c2">模拟操盘案例</b>，所有数据均为学习用途的模拟数据，非真实运营数据。</div>
+      <div class="footer-note" style="margin-top:8px">📧 2634363100@qq.com &nbsp;·&nbsp; 💬 微信 15205093670</div>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">首页</a>
+      <a href="selection.html">选品分析</a>
+      <a href="listing.html">商品落地页</a>
+      <a href="ads.html">广告投放</a>
+      <a href="dashboard.html">数据看板</a>
+      <a href="review.html">复盘与优化</a>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/listing.js"></script>
+</body>
+</html>
